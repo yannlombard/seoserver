@@ -3,7 +3,9 @@
 <p>dirty fork of https://github.com/apiengine/seoserver</p>
 <p>example of .htaccess</p>
 
-<code>  <IfModule mod_rewrite.c>
+<code>
+
+    <IfModule mod_rewrite.c>
 
         RewriteEngine on
 
