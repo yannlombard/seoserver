@@ -7,7 +7,7 @@
 <p>Set base href &lt;head&gt;</p>
 <code>&lt;base href="/" /&gt;</code>
 <p>Set html5Mode & hasPrefix into module's config</p>
-<code>
+```javascript
 
     angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
 
@@ -25,7 +25,7 @@
         });
     });
 
-</code>
+```
 <p>Or, you'll find a working front here : https://github.com/yannlombard/hello-angular<br>Build project then host it on apache with mod_rewrite & mod_proxy_http enable</p>
 
 <h3>.htaccess</h3>
