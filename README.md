@@ -5,7 +5,7 @@
 <p>Add html fragment into &lt;head&gt;</p>
 <code>&lt;meta name="fragment" content="!"&gt;</code>
 <p>Set base href &lt;head&gt;</p>
-<code>&lt;base href="/" /&gt;</code>
+<code>&lt;base href="/"&gt;</code>
 <p>Set html5Mode & hasPrefix into module's config</p>
 ```javascript
 angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
