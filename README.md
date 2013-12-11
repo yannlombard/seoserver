@@ -8,15 +8,23 @@
 <code>&lt;base href="/" /&gt;</code>
 <p>Set html5Mode & hasPrefix into module's config</p>
 <code>
+
     angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
+
         $locationProvider.html5Mode(true).hashPrefix('!');
+
         $routeProvider.when('/', {
+
             templateUrl: 'views/main.html',
             controller: 'MainCtrl'
+
         }).otherwise({
+
             redirectTo: '/'
+
         });
     });
+
 </code>
 <p>Or, you'll find a working front here : https://github.com/yannlombard/hello-angular<br>Build project then host it on apache with mod_rewrite & mod_proxy_http enable</p>
 
