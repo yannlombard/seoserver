@@ -3,9 +3,13 @@
 <p>dirty fork of https://github.com/apiengine/seoserver</p>
 <h3>Example of config for AngularJS</h3>
 <p>Add html fragment into &lt;head&gt;</p>
-<code>&lt;meta name="fragment" content="!"&gt;</code>
+```html
+<meta name="fragment" content="!">
+```
 <p>Set base href &lt;head&gt;</p>
-<code>&lt;base href="/"&gt;</code>
+```html
+<base href="/">
+```
 <p>Set html5Mode & hasPrefix into module's config</p>
 ```javascript
 angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
