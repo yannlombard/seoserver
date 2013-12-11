@@ -37,7 +37,7 @@ angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationP
 
 <h3>.htaccess</h3>
 ```
-<fModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
     RewriteEngine on
     <IfModule mod_proxy_http.c>
         # keep this order !
