@@ -4,7 +4,6 @@
 <p>example of .htaccess</p>
 
 <code>
-
     <IfModule mod_rewrite.c>
 
         RewriteEngine on
