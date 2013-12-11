@@ -1,14 +1,37 @@
 <h1>SEO server</h1>
 
 <p>dirty fork of https://github.com/apiengine/seoserver</p>
-<h3>example of .htaccess</h3>
+<h3>Example of config for AngularJS</h3>
+<p>Add html fragment into &lt;head&gt;</p>
+<code>&lt;meta name="fragment" content="!"&gt;</code>
+<p>Set base href &lt;head&gt;</p>
+<code>&lt;base href="/" /&gt;</code>
+<p>Set html5Mode & hasPrefix into module's config</p>
 <code>
+angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
 
-    <IfModule mod_rewrite.c>
+    $locationProvider.html5Mode(true).hashPrefix('!');
+
+    $routeProvider.when('/', {
+
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+
+    }).otherwise({
+
+        redirectTo: '/'
+
+    });
+});
+</code>
+<p>Or, you'll find a working front here : https://github.com/yannlombard/hello-angular<br>Build project then host it on apache with mod_rewrite & mod_proxy_http enable</p>
+
+<h3>.htaccess</h3>
+<code>&lt;IfModule mod_rewrite.c&gt;
 
         RewriteEngine on
 
-        <IfModule mod_proxy_http.c>
+        &lt;IfModule mod_proxy_http.c&gt;
 
             # keep this order !
             RewriteCond %{REQUEST_FILENAME} !-f
@@ -27,7 +50,9 @@
             RewriteCond %{REQUEST_URI} ^/index.html$
             RewriteRule (.) http://localhost:3000%{REQUEST_URI}? [QSA,L,P]
 
-        </IfModule>
+        &lt;/IfModule&gt;
 
-    </IfModule>
+    &lt;/IfModule&gt;
 </code>
+<h3>Not supported yet</h3>
+<p>404 & 500 detections</p>
