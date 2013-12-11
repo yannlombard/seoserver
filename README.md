@@ -33,7 +33,7 @@ angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationP
 <a href="#!/detail/{{product.id}}">
 <a href="#!/page">
 ```
-<p>Or, you'll find a working front here : https://github.com/yannlombard/hello-angular<br>Build project then host it on apache with mod_rewrite & mod_proxy_http enable</p>
+<p>Or, you'll find a working front here : https://github.com/yannlombard/hello-angular<br>Build project then host it on apache with enabled mod_rewrite & mod_proxy_http</p>
 
 <h3>.htaccess</h3>
 ```
