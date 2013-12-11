@@ -28,11 +28,11 @@
 
 <h3>.htaccess</h3>
 <code>
-    &lt;IfModule mod_rewrite.c&gt;
+    <fModule mod_rewrite.c>
 
         RewriteEngine on
 
-        &lt;IfModule mod_proxy_http.c&gt;
+        <IfModule mod_proxy_http.c>
 
             # keep this order !
             RewriteCond %{REQUEST_FILENAME} !-f
@@ -51,9 +51,10 @@
             RewriteCond %{REQUEST_URI} ^/index.html$
             RewriteRule (.) http://localhost:3000%{REQUEST_URI}? [QSA,L,P]
 
-        &lt;/IfModule&gt;
+        </IfModule>
 
-    &lt;/IfModule&gt;
+    </IfModule>
+
 </code>
 <h3>Not supported yet</h3>
 <p>404 & 500 detections</p>
