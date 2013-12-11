@@ -24,7 +24,7 @@ angular.module('stApp', ['ngRoute']).config(function ($routeProvider, $locationP
     });
 });
 ```
-<p>Set your navigation links with a "#!" that way</p>
+<p>Set your navigation links start with "#!"</p>
 ```html
 <a href="#!/detail/{{product.id}}">
 <a href="#!/page">
