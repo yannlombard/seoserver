@@ -1,8 +1,7 @@
 <h1>SEO server</h1>
 
 <p>dirty fork of https://github.com/apiengine/seoserver</p>
-<p>example of .htaccess</p>
-
+<h2>example of .htaccess</h2>
 <code>
 
     <IfModule mod_rewrite.c>
